@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:1;
+    font-family: "Poppins", sans-serif;
+}
+.main_box{
+    background:url("S.jpg");
+    height:99vh;
+    background-size: cover; 
+}
+.btn_one i{
+    color:rgb(241, 239, 239);
+    font-size:30px;
+    font-weight: 700;
+    position: absolute;
+    left:12px;
+    line-height:60px; ;
+    transition: all 0.2s linear;
+}
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    width:300px;
+    height:200vh;
+    background-color: rgba(223, 236, 227, 0.028);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s linear;
+}
+.sidebar_menu .logo{
+    position:absolute;
+    width:100%;
+    line-height:30px;
+     box-shadow: 0  2px 4px rgba(255,255,255,0.5);
+     height: 60px;
+}
+.sidebar_menu .logo a{
+    color:rgba(255, 255, 255, 0.937);
+    position:absolute;
+    left:50px;
+    font-weight:200;
+    text-decoration: none;
+    font-size:30px;
+    margin-top:13px;
+}
+
+.sidebar_menu .btn_two i{
+    color:grey;
+    font-size:25px;
+    position: absolute;
+    left:275px;
+    line-height:60px; 
+    opacity:0;
+    cursor:pointer;
+    transition: all 0.2s linear;
+}
+.sidebar_menu .menu{
+    position: absolute;
+    height:300px;
+    top:70px;
+   /
+}
+.sidebar_menu .menu li{
+    margin-top:7px;
+    padding: 20px 25px;
+
+}
+.sidebar_menu .menu li,a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+.sidebar_menu .social_media{
+  position: absolute;
+  left:25%;
+  /* bottom:100px; */
+
+ }
+ .sidebar_menu .social_media{
+    color:rgba(255, 255, 255, 0.775);
+    opacity: 0.5;
+     padding:4px ;
+     margin-top: 750px;
+     display: flex;
+} 
+  #check{ 
+    display: none;
+}
+ .sidebar_manu .menu li:hover{
+     box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+}
+.btn_one i:hover {
+    font-size: 40px;
+}
+
+.btn_two i:hover {
+    font-size: 30px;
+}
+
+#check:checked ~ .sidebar_menu {
+    left: 0;
+}
+
+/* Hide the menu button when sidebar opens */
+
+#check:checked ~ .btn_one {
+    opacity: 0;
+}
+
+
+/* Show the close button when sidebar opens */
+#check:checked ~ .sidebar_menu .btn_two {
+    opacity: 1;
+
+}
